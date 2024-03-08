@@ -7,7 +7,18 @@ Creating a Rust style Ownership/borrow/checker system in Go
 - Youtube'd Go compiler
   - Learned where to locate the compiler code
   - Came across Go arenas experimental Garbage Collection system to see its relevance to what I'm doing. I don't think there is any.
-  - 
+  - Compiler trying to get ASM output from Go compiler
+    - is it necessary? ...right now?
+  - Skip trying to get ASM output from Go compiler
+  - Looking for in-depth knowledge of compiler
+  - Finding the compiler code
+    - `/src/cmd/compile/internal`
+      - has a great README
+      - parser and types are not really used by the compiler
+        - WILL I NEED TO MODIFY THIS?
+
+
+
 
 ### Where did the idea come from? 
 > I saw a video that described the differences between using a typical programming language and Rust and everyone really came to the same conclusion that - 'It was more difficult'.
@@ -89,7 +100,7 @@ fmt.sprintf("Error found %s", err)
 
 
 #### REFERENCES
-- **linux sys calls**
+- **Linux Sys Calls**
 https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md
 - **rax** - temporary register/return value
 - **rdi** - used to pass first argument
@@ -122,6 +133,7 @@ https://www.youtube.com/watch?v=eglMl21DJz0
 https://www.youtube.com/watch?v=hmq6veCFo0Y
   - This guy is pretty damn good at doing and explaining simultaneously!
   - Interesting take on what I need to look forward to.
+<hr>
 
 - **Let's Create a Compiler (Pt.1)**
 https://youtu.be/vcSijrRsrY0
