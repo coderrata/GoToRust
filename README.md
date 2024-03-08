@@ -1,42 +1,32 @@
-# The Go Programming Language
+For official Go Programming Language, see the following:
+Our canonical Git repository is located at https://go.googlesource.com/go. There is a mirror of the repository at https://github.com/golang/go.
 
-Go is an open source programming language that makes it easy to build simple,
-reliable, and efficient software.
+# GoToRust
+An attempt to create a Rust style borrow/checker system in Go. Uses the official Golang repo.
 
-![Gopher image](https://golang.org/doc/gopher/fiveyears.jpg)
-*Gopher image by [Renee French][rf], licensed under [Creative Commons 4.0 Attributions license][cc4-by].*
+## GOALS
+- Create a borrow/checker system similar to Rust's
+- Use additive programming (package?)
+- No need to change existing code
+- Keep current syntax
+- ...
 
-Our canonical Git repository is located at https://go.googlesource.com/go.
-There is a mirror of the repository at https://github.com/golang/go.
+## Important Information
+- This will be from the experience of an absolute novice (I did attend a coding boot camp).
+- All of my journey will be documented:
+  - in the NOTES.md file.
+  - video Documentation is being done, at some point may be released.
+- I have no experience doing this.
+- I have never worked on a compiler.
+- Working on small projects(mostly), has not allowed me to really dive into deep understanding of a single programming language.
+- I was finding it frustrating to know the nuances of so many lanaguages.
+- I am doing this as a challenge to myself.
 
-Unless otherwise noted, the Go source files are distributed under the
-BSD-style license found in the LICENSE file.
+#### Previous Experience
+- I have worked on numerous mainly small projects throughout multiple languages.
+  - Worked on a full-blown website desinging the front and backend for a local roofing company to manage sales, customers, managers, etc.
+  - Created numerous APIs and API integrations for working/experimental projects.
+  - Assisted with numerous issues with different codebases under tight deadlines.
 
-### Download and Install
 
-#### Binary Distributions
-
-Official binary distributions are available at https://go.dev/dl/.
-
-After downloading a binary release, visit https://go.dev/doc/install
-for installation instructions.
-
-#### Install From Source
-
-If a binary distribution is not available for your combination of
-operating system and architecture, visit
-https://go.dev/doc/install/source
-for source installation instructions.
-
-### Contributing
-
-Go is the work of thousands of contributors. We appreciate your help!
-
-To contribute, please read the contribution guidelines at https://go.dev/doc/contribute.
-
-Note that the Go project uses the issue tracker for bug reports and
-proposals only. See https://go.dev/wiki/Questions for a list of
-places to ask questions about the Go language.
-
-[rf]: https://reneefrench.blogspot.com/
-[cc4-by]: https://creativecommons.org/licenses/by/4.0/
+**NOTES.md** for information
