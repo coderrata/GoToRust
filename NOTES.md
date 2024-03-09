@@ -2,7 +2,18 @@ Creating a Rust style Ownership/borrow/checker system in Go
 
 ### NOTES:
 #### As I progress this will hold my thought process throughout and explanations (for myself mostly)
-## **I Have put my daily learnings in another directory, LearnByDay, with an md file per day**
+## **I Have put my daily learnings in another directory, LearnByDay, in an .md file for each day. I will place a daily synopsis here**
+
+**DayOne:** March 8, 2024
+- Watching video on creating a parser from scratch.
+- I need to create a Parser!
+- I need to do a Hand-Written parser.
+- Use the Recursive-descent parser.
+- Can I just parse my code or do I need to create new types?
+- I can't get go tools/go compile to work on my machine. :(
+
+**DayTwo:** March 9, 2024
+- Finish the videos
 
 ### Where did the idea come from? 
 > I saw a video that described the differences between using a typical programming language and Rust and everyone really came to the same conclusion that - 'It was more difficult'.
@@ -103,31 +114,37 @@ https://go.dev/doc/asm
 
 #### SOURCES
 - **Understanding the Go Compiler - Jesus Espino**
-https://www.youtube.com/watch?v=qnmoAA0WRgE&pp=ygULZ28gY29tcGlsZXI%3D
+https://www.youtube.com/watch?v=qnmoAA0WRgE&pp=ygULZ28gY29tcGlsZXI%3D by Jesus Espino
   - to get a general overview of the GO compiler.
   - Gave locations on (bottom right hand of screen) code.
 <hr>
 
 - **Go 1.20 Memory Arenas Are AMAZING | Prime Reacts**
-https://www.youtube.com/watch?v=eglMl21DJz0
+https://www.youtube.com/watch?v=eglMl21DJz0 by ThePrimeTime
   - I haven't heard of this before and it seemed important.
   - Not important to what I'm doing.
 <hr>
 
 - **AoC 2021 Day 24 using Go [Compiler Analysis]**
-https://www.youtube.com/watch?v=hmq6veCFo0Y
+https://www.youtube.com/watch?v=hmq6veCFo0Y by 
   - This guy is pretty damn good at doing and explaining simultaneously!
   - Interesting take on what I need to look forward to.
 <hr>
 
 - **Let's Create a Compiler (Pt.1)**<br>
-https://youtu.be/vcSijrRsrY0
+https://youtu.be/vcSijrRsrY0 by Pixeled
   - UNBELIEVABLY GOOD dude!
   - So much information
 <hr>
 
 - **Building a Parser from Scratch**<br>
-https://packtpub.com by Dmitry Soshnikov
+https://www.youtube.com/watch?v=4m7ubrdbWQU by Dmitry Soshnikov
 - So far so good
 - Understand now that I need to create/adjust a parser because it deals with the syntax of the language.
+<hr>
 
+- **Recursive Descent Parsing** <br>
+https://www.youtube.com/watch?v=SToUyjAsaFk&pp=ygUkYnVpbGRpbmcgYSByZWN1cnNpdmUgZGVzY2VudCBwYXJzZXIg by hhp3
+- It's hand-written
+- Really good explanations
+- Excellent!

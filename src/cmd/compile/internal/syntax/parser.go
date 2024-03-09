@@ -13,32 +13,14 @@ import (
 )
 
 const debug = false
-const trace = false
-
-type parser struct {
+const trace = falseBuilding a Parser from Scratch
 	file  *PosBase
 	errh  ErrorHandler
 	mode  Mode
 	pragh PragmaHandler
 	scanner
 
-	base      *PosBase // current position base
-	first     error    // first error encountered
-	errcnt    int      // number of errors encountered
-	pragma    Pragma   // pragmas
-	goVersion string   // Go version from //go:build line
-
-	top    bool   // in top of file (before package clause)
-	fnest  int    // function nesting level (for error handling)
-	xnest  int    // expression nesting level (for complit ambiguity resolution)
-	indent []byte // tracing support
-}
-
-func (p *parser) init(file *PosBase, r io.Reader, errh ErrorHandler, pragh PragmaHandler, mode Mode) {
-	p.top = true
-	p.file = file
-	p.errh = errh
-	p.mode = mode
+	base      *PosBase // current position baseBuilding a Parser from Scratch
 	p.pragh = pragh
 	p.scanner.init(
 		r,
@@ -50,10 +32,7 @@ func (p *parser) init(file *PosBase, r io.Reader, errh ErrorHandler, pragh Pragm
 		func(line, col uint, msg string) {
 			if msg[0] != '/' {
 				p.errorAt(p.posAt(line, col), msg)
-				return
-			}
-
-			// otherwise it must be a comment containing a line or go: directive.
+				returnBuilding a Parser from Scratchgo: directive.
 			// //line directives must be at the start of the line (column colbase).
 			// /*line*/ directives can be anywhere in the line.
 			text := commentText(msg)
@@ -67,11 +46,7 @@ func (p *parser) init(file *PosBase, r io.Reader, errh ErrorHandler, pragh Pragm
 					// (if the comment spans multiple lines it's not
 					// a valid line directive and will be discarded
 					// by updateBase)
-					pos = MakePos(p.file, line, col+uint(len(msg)))
-				}
-				p.updateBase(pos, line, col+2+5, text[5:]) // +2 to skip over // or /*
-				return
-			}
+					pos = MakePos(p.file, line, col+uint(len(msg)))Building a Parser from Scratch
 
 			// go: directive (but be conservative and test)
 			if strings.HasPrefix(text, "go:") {
