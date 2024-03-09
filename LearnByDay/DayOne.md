@@ -1,0 +1,14 @@
+**Day One:**
+- Youtube'd Go compiler
+  - Learned where to locate the compiler code
+  - Came across Go arenas experimental Garbage Collection system to see its relevance to what I'm doing. I don't think there is any.
+  - Compiler trying to get ASM output from Go compiler
+    - is it necessary? ...right now?
+  - Skip trying to get ASM output from Go compiler
+  - Looking for in-depth knowledge of compiler
+  - Finding the compiler code
+    - `/src/cmd/compile/internal`
+      - has a great README
+      - parser and types are not really used by the compiler
+        - WILL I NEED TO MODIFY THIS?
+- Understand now that I need to adjust the PARSER!, because that deals with the syntax of a language and whether it is correct or not.

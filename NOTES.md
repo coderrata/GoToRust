@@ -2,23 +2,7 @@ Creating a Rust style Ownership/borrow/checker system in Go
 
 ### NOTES:
 #### As I progress this will hold my thought process throughout and explanations (for myself mostly)
-
-**Day One:**
-- Youtube'd Go compiler
-  - Learned where to locate the compiler code
-  - Came across Go arenas experimental Garbage Collection system to see its relevance to what I'm doing. I don't think there is any.
-  - Compiler trying to get ASM output from Go compiler
-    - is it necessary? ...right now?
-  - Skip trying to get ASM output from Go compiler
-  - Looking for in-depth knowledge of compiler
-  - Finding the compiler code
-    - `/src/cmd/compile/internal`
-      - has a great README
-      - parser and types are not really used by the compiler
-        - WILL I NEED TO MODIFY THIS?
-
-
-
+## **I Have put my daily learnings in another directory, LearnByDay, with an md file per day**
 
 ### Where did the idea come from? 
 > I saw a video that described the differences between using a typical programming language and Rust and everyone really came to the same conclusion that - 'It was more difficult'.
@@ -62,6 +46,7 @@ func foo() {
     strB = strC
 
     fmt.printline(strC)
+    fmt.printline(strB)
     return strA 
 } OUT: bar() // specifies the ONLY function that will accept this return value.
 
@@ -90,7 +75,7 @@ If a function is just returning to the console. i.e.
 func main() {
 //...
 fmt.sprintf("Error found %s", err)
-} End // This should remove the function automatically!
+} End // This should remove any memory used by this function automatically!
 ```
 
 ## How to Go About It
@@ -135,7 +120,14 @@ https://www.youtube.com/watch?v=hmq6veCFo0Y
   - Interesting take on what I need to look forward to.
 <hr>
 
-- **Let's Create a Compiler (Pt.1)**
+- **Let's Create a Compiler (Pt.1)**<br>
 https://youtu.be/vcSijrRsrY0
   - UNBELIEVABLY GOOD dude!
   - So much information
+<hr>
+
+- **Building a Parser from Scratch**<br>
+https://packtpub.com by Dmitry Soshnikov
+- So far so good
+- Understand now that I need to create/adjust a parser because it deals with the syntax of the language.
+
