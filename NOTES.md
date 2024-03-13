@@ -1,5 +1,5 @@
 Creating a Rust style Ownership/borrow/checker system in Go
-
+**Changed default branch to 'version1.2'** as this didn't interfere with current projects. Running the compiler would automatically set up 1.23. If it takes me too long to get a working compiler then 1.23+ might be needed. So I just branched off.
 ### NOTES:
 #### As I progress this will hold my thought process throughout and explanations (for myself mostly)
 ## **I Have put my daily learnings in another directory, LearnByDay, in an .md file for each day. I will place a daily synopsis here**
