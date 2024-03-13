@@ -13,7 +13,20 @@ Creating a Rust style Ownership/borrow/checker system in Go
 - I can't get go tools/go compile to work on my machine. :(
 
 **DayTwo:** March 9, 2024
-- Finish the videos
+- Learned about memory leaks in good detail.
+- Continued watching parsing videos for information.
+- Busy weekend didn't get much else done.
+
+**DayThree:** March 10, 2024
+- Looked through GO and Rust compilers.
+- Cloned Rust compiler.
+- Created a practice parser from a video.
+- Studied Rust compiler for a while.
+- Pretty much it, too busy.
+
+**DayFour:** March 11, 2024
+- Struggled with getting the compiler to work properly on my computer.
+- Studying the compiler more.
 
 ### Where did the idea come from? 
 > I saw a video that described the differences between using a typical programming language and Rust and everyone really came to the same conclusion that - 'It was more difficult'.
@@ -93,7 +106,12 @@ fmt.sprintf("Error found %s", err)
 **I have no idea if it's even possible!?**
 - Understand Go compiler.
 - Get a general idea for next steps.
-
+*add Day 3*
+- Add tokens in tokens.go
+- Need to modify the parser!
+- AST to where it would actually fit.
+- Would it be easier to just make a new parser?
+- Scanner.go would need to be changed also.
 
 #### REFERENCES
 - **Linux Sys Calls**
