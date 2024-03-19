@@ -27,6 +27,36 @@ Creating a Rust style Ownership/borrow/checker system in Go
 **DayFour:** March 11, 2024
 - Struggled with getting the compiler to work properly on my computer.
 - Studying the compiler more.
+- 
+**DayFive:** March 12, 2024
+- Got the compiler working!
+- Researching some more
+- 
+**DaySix:** March 13, 2024
+- Studying more...
+- Trial and error setups
+- Compiler not working now
+- 
+**DaySeven:** March 14, 2024
+- Watched another video to get a different persepective
+- Compiler still now working
+- 
+**DayEight:** March 15, 2024
+- Studying to get more test
+- Got compiler to work but not quite right
+- 
+**DayNine:** March 16, 2024
+- Busy day with kids
+- No programming
+
+**DayTen:** March 17, 2024
+- Resting day
+- 
+**DayEleven:** March 18, 2024
+- Jury Duty
+
+**DayTwelve:** March 19, 2024
+- Jury Duty
 
 ### Where did the idea come from? 
 > I saw a video that described the differences between using a typical programming language and Rust and everyone really came to the same conclusion that - 'It was more difficult'.
